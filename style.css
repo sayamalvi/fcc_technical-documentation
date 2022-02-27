@@ -1,0 +1,120 @@
+/* font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(8, 8, 8);
+}
+
+
+h1 {
+    font-size: 1.8rem;
+    line-height: 2em;
+    color: black;
+}
+
+.heading {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: .6em;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+.scrollbar-ul {
+    padding: 0;
+    height: 18vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+.scrollbar-ul a {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+.scrollbar-ul li {
+    padding: .8em;
+    border: 1px solid black;
+}
+
+.right-document {
+    margin: 1.2em;
+    line-height: 1.9em;
+}
+
+.right-document p {
+    margin: 1em;
+}
+
+.right-document ul {
+    margin: 0 3em 0 1em;
+
+}
+
+.right-document ul li {
+    margin: .6em 0 0 0;
+}
+
+.box {
+    background-color: rgb(233, 232, 231);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media(min-width:800px) {
+
+    .main-document {
+        display: flex;
+    }
+
+    .left {
+        border-right: 2px solid black;
+        color: rgb(83, 82, 82);
+        position: fixed;
+        width: 20em;
+        height: 100%;
+    }
+
+    .right {
+        position: absolute;
+        margin-left: 19em;
+        padding: 20px;
+    }
+
+    .scrollbar {
+        height: 100%;
+    }
+
+    .scrollbar-ul {
+        height: 80vh;
+        font-size: .9rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .scrollbar-ul li {
+        border-right: none;
+    }
+
+    .heading {
+        margin-right: 2.5em;
+    }
+
+
+}
